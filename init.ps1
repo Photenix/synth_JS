@@ -1,0 +1,1 @@
+code . --extensions-dir="E:\DATA_VSCODE\.vscode\extensions"

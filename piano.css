@@ -1,0 +1,72 @@
+#piano{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#piano button{
+    border-radius: 0 0 10px 10px;
+}
+
+octave{
+    position: relative;
+}
+
+octave>*{
+    position: relative;
+    display: flex;
+    gap: 0;
+}
+
+octave>key-black{
+    gap: 8px;
+    top: -100px;
+}
+
+octave>key-black>button{
+    width: 40px;
+    height: 50px;
+    background: black;
+    padding: 0;
+}
+
+octave>key-black>button[value="0"]{
+    opacity: 0;
+    width: 20px;
+}
+
+octave>key-black>button[value="0"]:nth-child(4){
+    width: 50px;;
+}
+
+
+octave>key-white>button{
+    width: 50px;
+    height: 100px;
+    background: white;
+    padding: 0;
+    border: 1px black solid;
+}
+
+octave button:focus{
+    outline: none;
+}
+
+key-white>button:active{
+    background: rgb(194, 194, 194);
+}
+
+key-black>button:active{
+    background: rgb(59, 59, 59);
+}
+
+key-white>button.activate{
+    background: rgb(194, 194, 194);
+}
+
+key-black>button.activate{
+    background: rgb(59, 59, 59);
+}
